@@ -1,0 +1,110 @@
+.tcontainer{
+    margin: 20px 40px;
+    color: rgb(0, 0, 0);
+}
+.theading{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    font-size: 6.8vw;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 1;
+    letter-spacing: -8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.theading span{
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    font-size: 6.8vw;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 1;
+    letter-spacing: -8px;
+    display: flex;
+    justify-content: center;
+-webkit-text-fill-color: #5CE65C;
+    margin-left: 20px;
+}
+@media (max-width:700px){
+    .theading, .theading span{
+        letter-spacing: -1px;
+        font-weight: 600;
+        -webkit-text-stroke: .5px #000;
+    }
+    
+}
+.profiles{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 80px;
+}
+.profile{
+    flex-basis: 260px;
+}
+.profile .profile-img{
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+.profile:hover .profile-img{
+filter: grayscale(0);
+}
+.user-name{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.profile h5{
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #2a2a2a;
+}
+.profile p{
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: justify;
+}
+@media (max-width:1150px){
+    .profiles{
+        flex-direction: column;
+    }
+    .profile{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.social-links a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    text-decoration: none;
+    color:#5CE65C;
+    font-size: x-large;
+}
+.social-links{
+  display: flex;
+  gap: 10px;
+}
+@media (max-width:700px){
+    .social-links{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+}

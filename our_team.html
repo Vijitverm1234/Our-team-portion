@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="our_team.css">
+    
+
+
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+
+    <div id="main">
+
+        
+
+        <div class="tcontainer">
+            <h1 class="theading">Meet <span>Our Team </span></h1>
+
+            <div class="profiles">
+                <div class="profile">
+                    <img src="card1.jpg" alt="" class="profile-img">
+                    <h3 class="user-name">User1</h3>
+                    <h5>General Member</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, corporis neque quidem
+                        excepturi praesentium beatae distinctio</p>
+                        <div class="social-links">
+                            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+                <div class="profile">
+                    <img src="card1.jpg" alt="" class="profile-img">
+                    <h3 class="user-name">User2</h3>
+                    <h5>General Member 1st</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, corporis neque quidem
+                        excepturi praesentium beatae distinctio</p>
+                        <div class="social-links">
+                            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+                <div class="profile">
+                    <img src="card1.jpg" alt="" class="profile-img">
+                    <h3 class="user-name">User3</h3>
+                    <h5>Technical Member 2nd</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, corporis neque quidem
+                        excepturi praesentium beatae distinctio</p>
+                    <div class="social-links">
+                        <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
+        <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+                image.onclick = () => {
+                    document.querySelector('.popup-image').style.display = 'block';
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            })
+            document.querySelector('.popup-image span').onclick = () => {
+                document.querySelector('.popup-image').style.display = 'none';
+            }
+
+        </script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
